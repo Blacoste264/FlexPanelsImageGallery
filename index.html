@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Flex Panels 💪</title>
+  <!-- Link our stylesheets and font -->
   <link rel="styleSheet" type="text/css" href="style.css"/>
   <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  <!-- Main panels -->
   <div class="panels">
     <div class="panel panel1">
       <p>Hey</p>
@@ -34,23 +36,7 @@
       <p>Motion</p>
     </div>
   </div>
-
-  <script>
-  const panels = document.querySelectorAll('.panel');
-
-  function toggleOpen(e) {
-    this.classList.toggle('open');
-  }
-
-  function toggleActive(e) {
-      if (e.propertyName.includes('flex')) {
-      this.classList.toggle('open-active');
-    }
-  }
-
-  panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-  panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
-  </script>
-
+  <!-- Link our JavaScript file -->
+  <script src="app.js" type="text/javascript"></script>
 </body>
 </html>
