@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Flex Panels 💪</title>
-  <link rel="styleSheet" type="text/css" href="style.css"
+  <link rel="styleSheet" type="text/css" href="style.css"/>
   <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -36,6 +36,19 @@
   </div>
 
   <script>
+  const panels = document.querySelectorAll('.panel');
+
+  function toggleOpen() {
+    console.log('hello');
+      this.classList.toggle('open');
+  }
+
+  function toggleActive(e) {
+    console.log(e.propertyName);
+  }
+
+  panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+  panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
   </script>
 
 </body>
