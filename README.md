@@ -4,7 +4,7 @@
 
 
 
-<a href="https://i.imgur.com/YGRvkYg.gif"><img src="https://i.imgur.com/YGRvkYg.gif" title="source: imgur.com" /></a>
+<a href="https://imgur.com/YGRvkYg"><img src="https://i.imgur.com/YGRvkYg.gif" title="source: imgur.com" /></a>
 
 <h3> To preview each project simply clone this repository.</h3></br>
 <h3> Make sure to have <a href="https://nodejs.org/en/download/"> Node.js </a> downloaded and ready to go so we can run a simple static server.</h3></br>
